@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Landing from "../components/LandingComponent/Landing";
-// import NewPost from "../components/Post/New/NewPost";
+import NewPost from "../components/Post/New/NewPost";
 
 //localhost:3000/--> LandingComponent
 //localhost:3000/post/new-->
@@ -12,7 +12,7 @@ export default function AppRouter() {
     return <BrowserRouter>
         <Routes>
             <Route path="/" element={<Landing />} />/
-            {/* <Route path="new" element={<NewPost />} /> */}
+            <Route path="new" element={<NewPost />} />
         </Routes>
 
     </BrowserRouter>
