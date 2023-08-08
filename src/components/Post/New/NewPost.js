@@ -10,7 +10,7 @@ import Button from 'react-bootstrap/Button';
 import './NewPost.css';
 
 export default function NewPost() {
-const [formData, setFormData]=useState({
+const [FormData]=useState({
 image:null,
 author:"",
 location:"",
@@ -20,6 +20,7 @@ description:"",
 function captureForm(event){
   event.preventDefault();
   const formValues =new FormData(event.target) ;
+  console.log(formValues);
   debugger
 }
 return (
